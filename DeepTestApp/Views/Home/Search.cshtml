@@ -1,0 +1,71 @@
+﻿@model DeepTestApp.Models.SearchViewModel
+@using PagedList.Mvc;
+@using PagedList;
+
+@{
+    ViewBag.Title = "DeependAncestry";
+}
+
+<h2>DeependAncestry</h2>
+<div class="row">
+    @using (Html.BeginForm("Search"))
+    {
+        @*@Html.ValidationSummary()*@
+        <div class="row">
+            <div class="col-md-8 form-group">
+                @Html.TextBoxFor(item => item.Name, new { @class = "form-control required" })
+                @Html.ValidationMessageFor(item => item.Name, "", new { @class = "textRed" })
+            </div>
+            <div class="col-md-4 form-group">
+                <input type="submit" class="form-control btn btn-default" name="btnSearch" id="btnSearch" value="Search" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 form-group">
+                @Html.Label("Gender:")
+                @Html.RadioButton("Gender", "M", isChecked: false) Male
+                @Html.RadioButton("Gender", "F", isChecked: false) Female
+            </div>
+            <div class="col-md-4 form-group">
+                @Html.ActionLink("Advanced Search", "AdvancedSearch")
+            </div>
+        </div>
+
+        <div class="row">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <th>
+                            ID
+                        </th>
+                        <th>
+                            NAME
+                        </th>
+                        <th>
+                            GENDER
+                        </th>
+                        <th>
+                            BIRTHPLACE
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Results)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.Name</td>
+                            <td>@item.Gender</td>
+                            <td>@item.BirthPlace</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <br />
+            Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+            @Html.PagedListPager(Model.Results, page => Url.Action("Search", new {name=Model.Name, gender=Model.Gender, page }))
+        </div>
+    }
+</div>

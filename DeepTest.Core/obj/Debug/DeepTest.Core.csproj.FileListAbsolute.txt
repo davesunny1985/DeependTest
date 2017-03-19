@@ -1,0 +1,4 @@
+D:\Desktop_Files\DeepTest\DeepTest.Core\bin\Debug\DeepTest.Core.dll
+D:\Desktop_Files\DeepTest\DeepTest.Core\bin\Debug\DeepTest.Core.pdb
+D:\Desktop_Files\DeepTest\DeepTest.Core\obj\Debug\DeepTest.Core.dll
+D:\Desktop_Files\DeepTest\DeepTest.Core\obj\Debug\DeepTest.Core.pdb

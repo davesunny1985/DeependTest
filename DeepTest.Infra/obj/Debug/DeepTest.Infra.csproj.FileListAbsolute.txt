@@ -1,0 +1,9 @@
+D:\Desktop_Files\DeepTest\DeepTest.Infra\bin\Debug\DeepTest.Infra.dll
+D:\Desktop_Files\DeepTest\DeepTest.Infra\bin\Debug\DeepTest.Infra.pdb
+D:\Desktop_Files\DeepTest\DeepTest.Infra\bin\Debug\DeepTest.Core.dll
+D:\Desktop_Files\DeepTest\DeepTest.Infra\bin\Debug\Newtonsoft.Json.dll
+D:\Desktop_Files\DeepTest\DeepTest.Infra\bin\Debug\DeepTest.Core.pdb
+D:\Desktop_Files\DeepTest\DeepTest.Infra\bin\Debug\Newtonsoft.Json.xml
+D:\Desktop_Files\DeepTest\DeepTest.Infra\obj\Debug\DeepTest.Infra.csprojResolveAssemblyReference.cache
+D:\Desktop_Files\DeepTest\DeepTest.Infra\obj\Debug\DeepTest.Infra.dll
+D:\Desktop_Files\DeepTest\DeepTest.Infra\obj\Debug\DeepTest.Infra.pdb
